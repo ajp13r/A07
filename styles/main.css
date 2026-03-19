@@ -26,32 +26,80 @@ h3 {
 /* the styles for the header */
 header {
 	& h2 {
-		font-size: 175%;
-		text-indent: 30px;
+		padding-bottom: 0;
 	}
 	& h3 {
-		font-size: 130%;
-		font-style: italic;
-		text-indent: 30px;
+		padding-bottom: 1em;
 	}
 	& img {
-		float: left;
+		margin: .75em 1em;
 	}
 }
 
 /* the styles for the main content */
 main {
 	clear: left;
+	padding-left: 1em;
 }
 
 /* the styles for the footer */
 footer {
 	& p {
 		text-align: center;
+		padding: 1em;
 	}
 }
 
 /* CSS class */
 .large {
 	font-size: 125%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1, h2, h3, p, ul {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+ul {
+	margin-left: 2em;
+}
+
+body {
+	width: 80%;
+	margin: auto;
+	border: 2px solid var(--accent-color);
+}
+
+header {
+	border-bottom: 2px solid var(--accent-color);
+	background: linear-gradient(30deg,#f6bb73 0%,white 30%,white 65%,#f6bb73 100%);
+}
+
+main h1 {
+	border-top: 2px solid var(--accent-color);
+	border-bottom: 2px solid var(--accent-color);
+}
+
+footer {
+	background-color: var(--accent-color);
+}
+
+footer p {
+	color: white;
+}
+
+blockquote {
+	font-style: italic;
+	padding: 1em;
+}
+
+main img {
+	border: 4px double var(--accent-color);
+	border-radius: 10px;
 }
